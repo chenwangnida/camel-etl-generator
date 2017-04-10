@@ -27,11 +27,12 @@ public class Generator {
 				endExclusive_name);
 		HashSet<String> randomlyCitySet = generatorUtil.getRandomlyString(number, startInclusive_city,
 				endExclusive_city);
-
+		// transfer set to list
 		List<String> randomlyFirstNameList = new ArrayList<String>(randomlyFirstNameSet);
 		List<String> randomlyLastNameList = new ArrayList<String>(randomlyLastNameSet);
 		List<String> randomlyCityList = new ArrayList<String>(randomlyCitySet);
 
+		//initial instances of PersonDocument
 		for (int i = 0; i < number; i++) {
 			PersonDocument personDocument = new PersonDocument();
 			personDocument.setUser(randomlyFirstNameList.get(i));
@@ -41,6 +42,7 @@ public class Generator {
 			generateInput(number, personDocument);
 		}
 	}
+
 
 	private static void generateInput(int number, PersonDocument personDocument) {
 
