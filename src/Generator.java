@@ -39,10 +39,12 @@ public class Generator {
 			personDocument.setFirstName(randomlyFirstNameList.get(i));
 			personDocument.setLastName(randomlyLastNameList.get(i));
 			personDocument.setCity(randomlyCityList.get(i));
-			generateInput(number, personDocument);
+			//convert class bean into xml files
+			generateInput(i, personDocument);
 		}
 	}
 
+    /** Returns xml files from given class beans */
 
 	private static void generateInput(int number, PersonDocument personDocument) {
 
