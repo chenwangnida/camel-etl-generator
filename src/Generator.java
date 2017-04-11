@@ -7,6 +7,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+import bean.PersonDocument;
+import util.GeneratorUtil;
+
 public class Generator {
 
 	// size of the inputs
